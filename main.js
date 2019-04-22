@@ -15,6 +15,22 @@ $(document).ready(function() {
         }
         windowCount++;
         var offset = (windowCount % 10) * 10;
+        var left = 200;
+        var top = 50;
+        var height = $(window).height() - top;
+        var width = $(window).width() - left;
+        if (height >= 600) {
+            height = 600;
+        } else {
+            top = 25;
+            height = $(window).height() - top;
+        }
+        if (width >= 800) {
+            width = 800;
+        } else {
+            left = 100;
+            width = $(window).width() - left;
+        }
         $('body').append('<div class="panel" id="window' + windowCount + '">' +
                 '<div class="panel-heading"><img class="favicon" src="'+ icon.image +'" onerror="this.src=\'images/error.png\';" />' + 
                 '<span class="title">' + icon.name + ' [' + icon.url + ']</span><a class="close-window"></a></div>' +
@@ -30,9 +46,10 @@ $(document).ready(function() {
             handles: "all",
             stop: function(evt, el) {
             }
-        }).css({"top": 50 + offset, "left": 200 + offset, "width": 800, "height": 600});;
+        }).css({"top": top + offset, "left": left + offset, "width": width, "height": height});;
         
         $("#window" + windowCount + " .close-window").on("click", function() {
+            windowCount--;
             $(this).parent().parent().remove();
         });
 
