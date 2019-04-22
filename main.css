@@ -87,7 +87,7 @@ iframe {
     width: 42px;
     padding: 5px 10px;
 }
-.close-window:hover, .close-window:focus, .close-window:active {
+.close-window:hover {
     background: url(images/close_hover.png) no-repeat center;
     background-size: 22px 22px;
     background-color: #E81123;
