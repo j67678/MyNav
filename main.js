@@ -56,8 +56,6 @@ $(document).ready(function() {
             $(this).css('z-index', '1000');
         });
         
-        $("#window" + windowCount)
-        
         $("#window" + windowCount + " .close-window").on("click", function() {
             windowCount--;
             $(this).parent().parent().remove();
