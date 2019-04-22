@@ -1,0 +1,91 @@
+body, html {
+    height: 100%;
+}
+body { 
+    background: url(images/wallpaper.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#icons {
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.icon {
+    width: 76px;
+    margin: 10px 2px;
+    text-align: center;
+    user-select: none;
+}
+.icon:hover {
+    outline: 1px solid rgba(153,209,255, 0.5);
+    background: rgba(204,232,255, 0.2);
+}
+.icon img {
+    width: 56px;
+    height: 56px;
+    padding: 4px;
+}
+.icon span {
+    color: white;
+    font-size: 12px;
+    height: 30px;
+    display: block;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+}
+
+.panel {
+    border: 1px solid #26A6F2;
+    -webkit-box-shadow: 1px 1px 13px 0px rgba(87,87,87,1);
+    -moz-box-shadow: 1px 1px 13px 0px rgba(87,87,87,1);
+    box-shadow: 1px 1px 13px 0px rgba(87,87,87,1);
+    position:fixed !important;
+    border-radius: 0;
+	overflow: hidden;
+}
+.panel-heading {
+    padding: 0;
+    color: white;
+    font-size: 12px;
+    line-height: 12px;
+    background-color: #26A6F2;
+    border: none;
+    user-select: none;
+    border-radius: 0;
+}
+.panel-heading .title {
+    padding: 10px 8px;
+    display: inline-block;
+}
+.panel-heading .favicon {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    margin-top: -3px;
+}
+
+iframe {
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+.close-window {
+    float: right;
+    height: 32px;
+    width: 42px;
+    padding: 5px 10px;
+}
+.close-window:hover {
+    background-color: #E81123;
+}
+
+
