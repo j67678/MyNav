@@ -8,4 +8,6 @@
 
 标题栏颜色在`main.css`中修改，默认窗口大小和位置在`main.js`中修改。
 
-![GIF演示](preview.gif)
+![GIF演示1](preview1.gif)
+
+![GIF演示2](preview2.gif)
