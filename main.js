@@ -46,7 +46,17 @@ $(document).ready(function() {
             handles: "all",
             stop: function(evt, el) {
             }
-        }).css({"top": top + offset, "left": left + offset, "width": width, "height": height});;
+        }).css({
+            "top": top + offset,
+            "left": left + offset,
+            "width": width,
+            "height": height
+        }).on("mousedown", function() {
+            $('div.panel').not(this).css('z-index', '100');
+            $(this).css('z-index', '1000');
+        });
+        
+        $("#window" + windowCount)
         
         $("#window" + windowCount + " .close-window").on("click", function() {
             windowCount--;
