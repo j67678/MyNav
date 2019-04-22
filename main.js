@@ -17,8 +17,7 @@ $(document).ready(function() {
         var offset = (windowCount % 10) * 10;
         $('body').append('<div class="panel" id="window' + windowCount + '">' +
                 '<div class="panel-heading"><img class="favicon" src="'+ icon.image +'" onerror="this.src=\'images/error.png\';" />' + 
-                '<span class="title">' + icon.name + ' [' + icon.url + ']</span><img class="close-window" onmouseover="this.src=\'images/close_hover.png\';"' +
-                'onmouseout="this.src=\'images/close.png\';" src="images/close.png" /></div>' +
+                '<span class="title">' + icon.name + ' [' + icon.url + ']</span><span class="close-window"></span></div>' +
                 '<iframe src="' + icon.url + '"></iframe>' + 
             '</div>');
         $("#window" + windowCount).draggable({

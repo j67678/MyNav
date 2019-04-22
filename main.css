@@ -79,12 +79,17 @@ iframe {
 }
 
 .close-window {
+    background: url(images/close.png) no-repeat center;
+    background-size: 22px 22px;
+    display: inline-block;
     float: right;
     height: 32px;
     width: 42px;
     padding: 5px 10px;
 }
 .close-window:hover {
+    background: url(images/close_hover.png) no-repeat center;
+    background-size: 22px 22px;
     background-color: #E81123;
 }
 
